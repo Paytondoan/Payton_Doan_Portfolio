@@ -1,0 +1,23 @@
+.container-fluid{
+text-align: center;
+padding: 25px 50px 75px;
+font-family: "Figtree";
+color:black;
+
+}
+
+h1{
+  text-align: center;
+}
+
+.button:hover{
+  transform: scale(1.05);
+}
+
+body{
+  background-color: rgb(220, 255, 243);
+}
+ 
+.button{
+  transition: 0.5 ease;
+}

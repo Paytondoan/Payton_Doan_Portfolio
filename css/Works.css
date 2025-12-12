@@ -1,0 +1,420 @@
+body{
+  transition: opacity 0.4s ease-in-out;
+}
+body.fade-out{
+  opacity: 0;
+}
+body.fade-in{
+  animation: fadeIn 0.4s ease-in-out
+}
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+.container-fluid{
+  font-family: "Montserrat Alternates";
+  padding-top: 5rem;
+  text-align: center;
+  color:#FDF1D5;
+  padding: 2 2 2 2;
+}
+
+h1{
+  padding-top: 1rem;
+line-height: 1.5;
+font-weight: bold;
+}
+
+.color{
+color: #FDF1D5;
+}
+
+p{
+  padding-top:5rem;
+  padding-bottom: 15rem;
+}
+
+h3{
+  letter-spacing: -2px;
+}
+
+nav a{
+  color: #FDF1D5;
+  font-family: "Montserrat Alternates";
+  margin: 15px;
+  transition: 0.5s ease;
+  display: inline-block;
+}
+nav{
+  padding-top: 1rem;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+position: sticky;
+z-index: 1000;
+top: 0;
+left: 0;
+right: 0;
+transition: 0.3s ease;
+background-color:transparent; 
+width: auto;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+nav.scrolled{
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 2px;
+}
+
+.nav-link.active{
+  background-color: rgba(255, 255, 255, 0.5);
+border-radius:20px ;
+  padding: 5px 12px;
+}
+
+nav a:hover{
+  transform: scale(1.1);
+  color: #FDF1D5;
+}
+
+#Projects{
+  padding-bottom: 0;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding:0 20px;
+  transition: 0.5s ease;
+       animation:appear linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 30%;
+  transition: 0.5s ease;
+}
+.wedding{
+  transition:0.5s ease;
+  border-radius: 20px;
+  padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.wedding:hover{
+  transform: scale(1.025);
+ filter: blur(5px);
+}
+
+.dice{
+  transition:0.5s ease;
+  padding: 15px;
+      background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.dice:hover{
+  transform:scale(1.025);
+  filter: blur(5px);
+}
+.studybuddy{
+  transition: 0.5s ease;
+   padding: 15px;
+      background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.studybuddy:hover{
+  transform: scale(1.025);
+  filter: blur(5px);
+}
+.images img{
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+}
+.image-wrapper{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 300px;
+}
+
+.overlay-text{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+  padding: 20px;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay-text p {
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+  margin: 0 auto;
+}
+
+.vid{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding:20px;
+  transition: 0.5s ease;
+       animation:appear linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 30%;
+  
+  
+}
+.vid video{
+   width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition:0.5s ease;
+   padding: 15px;
+      background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.vid video:hover{
+  transform: scale(1.1);
+  filter: blur(5px);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.projectss{
+text-align: center;
+font-weight: bold;
+font-family: "Montserrat Alternates";
+padding: 20px;
+color:#FDF1D5
+ 
+}
+
+@keyframes appear{
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container-fluid-rectangle{
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+
+.about{
+  font-family: "Montserrat Alternates";
+  color: #FDF1D5;
+}
+#about{
+  padding:0 48px ;
+  margin: 0;
+}
+.about-me{
+  color: #780000;
+  padding: 80px 60px;
+  border-radius: 20px;
+  margin: 0;
+  background-color: #FDF1D5;
+  width: 70%;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+    font-family: "Montserrat";
+}
+
+.resume{
+  padding: 40px 20px;
+  display:flex;
+  align-items: center;
+  max-width: 800px;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.Resume-link {
+  color: #780000;
+  text-decoration: none;
+  font-weight: 600;
+  transition:0.3s ease;
+}
+
+.Resume-link:hover {
+  text-decoration:underline;
+  color: #C1131F;
+}
+
+.contact{
+  text-align: center;
+  border-radius: 50px;
+  background-color:#FDF1D5;
+  padding: 15px;
+font-family: "Montserrat Alternates";
+color: #780000;
+width: 45%;
+
+}
+
+.contact-me{
+  padding-top: 2rem;
+}
+
+.Email-Linkedin{
+  color: #780000;
+  background-color: #FDF1D5;
+  border-radius: 35px;
+font-family: "Montserrat";
+padding: 25px 100px;
+max-width: max-content;
+width: 100%;
+   filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+#Contact-details{
+  padding-top: 3rem;
+}
+.animation-email{
+  transition: 0.45s ease;
+}
+.animation-email:hover{
+  transform: scale(1.025) rotate(1deg);
+  color: #C1131F;
+}
+.email-color{
+  color: #780000;
+  transition: 0.45s ease;
+}
+
+.email-color:hover{
+  color: #C1131F;
+}
+
+.Linkedin{
+  margin-bottom:5px ;
+
+}
+.Linkedin-color:hover{
+color: #C1131F;
+}
+.Linkedin-color{
+color: #780000;
+transition:0.45s ease;
+}
+
+.Linkedin-animate{
+  transition:0.45s ease;
+}
+.Linkedin-animate:hover{
+  transform: scale(1.025) rotate(1deg);
+  color: #C1131F;
+}
+
+.icon{
+  padding-top: 1.5rem;
+  color: #780000;
+  text-decoration: none;
+}
+
+.emailicon-color{
+  color: #780000;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+.linked-color{
+  color: #780000;
+  transition: 0.5s ease;
+}
+.emailicon-color:hover{
+  transform: scale(1.5);
+  color:#FDF1D5;
+  text-decoration: none;
+}
+
+.linked-color:hover{
+  transform:scale(1.2);
+  color:#FDF1D5
+}
+
+
+#Works {
+  background: linear-gradient(-45deg, 
+    #C1131F, 
+    #C1131F 20%, 
+    #780000 50%, 
+    #C1131F 70%, 
+    #c41e3a);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  height: auto;
+}
+#About{
+  background: linear-gradient(-45deg, 
+    #C1131F, 
+    #C1131F 20%, 
+    #780000 50%, 
+    #C1131F 70%, 
+    #c41e3a);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  height: auto;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@media (max-width: 767px) { }
+@media (min-width: 768px) and (max-width: 991px) { }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) { }

@@ -1,0 +1,24 @@
+html,body{min-height: 1000px;}
+caption {font-size:larger;font-weight:10px;color:#EAE6DF; background-color:#879A77; padding: 5px;padding-inline-end: 5px;border-radius: 5px;border-style: dashed;font-family:"Pixelify Sans", system-ui;text-shadow: 2px 2px 4px #000;}
+th{background-color:#879A77;
+color:#EAE6DF; font-family: "Pixelify Sans", sans-serif;text-shadow: 2px 2px 4px #000;}
+head{color: steelblue;}
+body {text-align: center;}
+td {text-align: center;}
+td{color:#EAE6DF;background-color:#938E89;font-family: "Pixelify Sans", sans-serif;text-shadow: 2px 2px 4px #000;}
+a:hover{background-color:#879A77;
+font-size:larger; cursor:pointer;border-radius: 50px;
+transition: 0.5s; }
+
+
+a:link{color:#D7E5F0}
+a:visited{color:#EAE6DF;}
+a:active{color:#d3c4f5 ;}
+table{border-radius: 5px;}
+td.time{background-color: #879A77;}
+div.Lab2PartC {background-color: #879A77; border-radius: 15px;}
+div.Glass {border:1px solid rgb(255,255,255,0); border-radius: 5px;background:rgb(255,255,255,0.1); box-shadow: 0 4px 30px rgba(0,0,0,0.1); backdrop-filter: blur(2.8px); width: 50; height: 50;}
+p{color:#EAE6DF}
+h3{color: #EAE6DF;}
+
+
